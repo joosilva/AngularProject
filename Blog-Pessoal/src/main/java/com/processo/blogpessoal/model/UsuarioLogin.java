@@ -4,7 +4,8 @@ public class UsuarioLogin {
 
 	private Long id;
 	private String nome;
-	private String usuario;
+	private String nickname;
+	private String email;
 	private String senha;
 	private String foto;
 	private String token;
@@ -21,11 +22,17 @@ public class UsuarioLogin {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public String getNickname() {
+		return nickname;
+	}
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 	public String getUsuario() {
-		return usuario;
+		return email;
 	}
 	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+		this.email = usuario;
 	}
 	public String getSenha() {
 		return senha;
