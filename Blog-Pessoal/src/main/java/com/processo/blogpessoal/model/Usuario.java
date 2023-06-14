@@ -32,7 +32,7 @@ public class Usuario {
 	@Schema(example = "email@email.com.br")
 	@NotBlank(message = "Campo obrigatório.")
 	@Email
-	private String usuario;
+	private String email;
 	
 	@NotBlank(message = "Campo obrigatório.")
 	@Size(min = 8, message = "A senha deve conter entre 8 e 16 caracteres.")
@@ -69,11 +69,11 @@ public class Usuario {
 	}
 
 	public String getUsuario() {
-		return usuario;
+		return email;
 	}
 
 	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+		this.email = usuario;
 	}
 
 	public String getSenha() {
