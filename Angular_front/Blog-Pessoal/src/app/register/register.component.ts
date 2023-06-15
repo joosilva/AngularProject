@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    if(this.usuario.senha != this.confirmPassword) {
+    if(this.usuario.senha != this.password) {
       alert("As senhas não coincidem.");
     } else {
       this.authService.register(this.usuario).subscribe((resp: Usuario) => {

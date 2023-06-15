@@ -10,13 +10,15 @@ import { Usuario } from '../model/Usuario';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+    ) { }
 
   login(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
-    return this.http.post<UsuarioLogin>("http://localhost:4200/logar", usuarioLogin);
+    return this.http.post<UsuarioLogin>("http://localhost:8080/usuarios/logar", usuarioLogin);
   }
 
   register(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>("http://localhost:4200/cadastrar", usuario);
+    return this.http.post<Usuario>("http://localhost:8080/usuarios/cadastrar", usuario);
   }
 }
