@@ -53,8 +53,8 @@ public class UsuarioController {
 	}
 	
 	@GetMapping("buscaNickname/{nickname}")
-	public ResponseEntity<List<Usuario>> getByUsuario(@PathVariable String usuario) {
-		return ResponseEntity.ok(usuarioRepository.findAllByUsuarioContainingIgnoreCase(usuario));
+	public ResponseEntity<List<Usuario>> getByUsuario(@PathVariable String nickname) {
+		return ResponseEntity.ok(usuarioRepository.findAllByNicknameContainingIgnoreCase(nickname));
 	}
 	
     @PostMapping("/logar")

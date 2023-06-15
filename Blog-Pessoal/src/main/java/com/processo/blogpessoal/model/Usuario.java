@@ -68,11 +68,11 @@ public class Usuario {
 		this.nickname = nickname;
 	}
 
-	public String getUsuario() {
+	public String getEmail() {
 		return email;
 	}
 
-	public void setUsuario(String usuario) {
+	public void setEmail(String usuario) {
 		this.email = usuario;
 	}
 
