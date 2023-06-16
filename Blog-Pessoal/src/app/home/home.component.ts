@@ -14,7 +14,10 @@ export class HomeComponent implements OnInit {
 
   nome = environment.nome;
   foto = environment.foto;
+  
   postagem: Postagem = new Postagem();
+  listaPostagens: Postagem[];
+
   usuario: Usuario = new Usuario();
   idUsuario = environment.id;
 
@@ -29,6 +32,15 @@ export class HomeComponent implements OnInit {
     if(environment.token == "") {
       this.router.navigate(["/login"]);
     }
+
+    this.getAllPosts();
+
+  }
+
+  getAllPosts() {
+    this.postagemService.getAllPosts().subscribe((resp: Postagem[]) => {
+      this.listaPostagens;
+    })
   }
 
   post() {

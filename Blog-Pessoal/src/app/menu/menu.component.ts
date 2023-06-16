@@ -9,4 +9,8 @@ export class MenuComponent {
 
   constructor() {}
 
+  ngOnInit() {}
+
 }
+
+

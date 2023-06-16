@@ -1,17 +1,19 @@
 .background {
     background-color: rgb(221, 221, 221);
+    min-height: 100vh;
 }
 .card {
     background-color: rgb(255, 255, 255);
     margin: 8px;
     border-radius: 7px;
-    height: 50vh;
+    height: 30vh;
 }
 
 .home {
-    background-color: rgb(255, 255, 255);
+    background-color: none;
     margin-top: 7px;
     margin-bottom: 7px;
-    border-radius: 7px;
-    min-height: 100vh;
+}
+.fs-22 {
+    font-size: 22px;
 }
