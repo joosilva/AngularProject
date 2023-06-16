@@ -38,10 +38,6 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagens")
 	private Usuario usuario;
-	
-	@ManyToOne
-	@JsonIgnoreProperties("postagens")
-	private Tema tema;
 
 	public Long getId() {
 		return id;
@@ -89,14 +85,6 @@ public class Postagem {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
-	}
-
-	public Tema getTema() {
-		return tema;
-	}
-
-	public void setTema(Tema tema) {
-		this.tema = tema;
 	}
 
 }
