@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  /*post() {
+  post() {
     this.usuario.id = this.idUsuario;
     this.postagem.usuario = this.usuario;
 
@@ -41,6 +41,6 @@ export class HomeComponent implements OnInit {
 
       this.postagem = new Postagem();
     })
-  }*/
+  }
 
 }
