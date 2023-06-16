@@ -1,0 +1,16 @@
+.bg {
+    min-height: 100vh;
+}
+
+#background {
+    background-image: url("../../assets/img/background-register.svg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fs-12 {
+    font-size: 12px;
+    margin-top: 8px;
+}
