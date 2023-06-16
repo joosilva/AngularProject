@@ -1,7 +1,11 @@
-#background {
-    background-image: url("../../assets/img/login-background.png");
+.bg {
     min-height: 100vh;
+}
+
+#background {
+    background-image: url("../../assets/img/background-login.svg");
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }

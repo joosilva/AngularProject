@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { Usuario } from '../model/Usuario';
+import { environment } from '../../environment/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -21,4 +22,15 @@ export class AuthService {
   register(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>("http://localhost:8080/usuarios/cadastrar", usuario);
   }
+
+  logged() {
+    let login = false;
+
+    if(environment.token != "") {
+      login = true;
+    }
+    
+    return login;
+  }
+  
 }

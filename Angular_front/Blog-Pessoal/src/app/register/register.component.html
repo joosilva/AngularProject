@@ -1,25 +1,26 @@
 <div class="container-fluid">
-    <div class="row d-flex align-items-center">
+    <div class="row d-flex align-items-center justify-content-center bg">
 
         <div class="col-md-6">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-md-6">
 
                     <h1 class="text-center mb-3">Cadastrar</h1>
                     
                     <div class="form-group">
-                        <label for="user">Nome:</label>
+                        <label for="user">*Nome:</label>
                         <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="Nome" id="name">
-                        <label for="user">Nickname:</label>
+                        <label for="user">*Nickname:</label>
                         <input [(ngModel)]="usuario.nickname" class="form-control" type="text" name="Nickname" id="nickname">
-                        <label for="email">E-mail:</label>
+                        <label for="email">*E-mail:</label>
                         <input [(ngModel)]="usuario.email" class="form-control" type="text" name="E-mail" id="email">
-                        <label for="password">Senha:</label>
+                        <label for="password">*Senha:</label>
                         <input (input)="confirmPassword($event)" class="form-control" type="password" name="Senha" id="password">
-                        <label for="password">Confirme sua senha:</label>
+                        <label for="password">*Confirme sua senha:</label>
                         <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="Confirmar senha" id="confirmPassword">
                         <label for="password">Foto de perfil:</label>
                         <input [(ngModel)]="usuario.foto" class="form-control" type="text" name="Foto de perfil" id="foto">
+                        <p class="fs-12">*campos obrigatórios</p>
                     </div>
                     
                     <div class="d-flex justify-content-center">
